@@ -95,7 +95,7 @@ class Relationship extends Model
         return true; // No conflicts found, relationship can be added
     }
 
-    public function handleOverride(Relationship $relationship)
+    public static function handleOverride(Relationship $relationship)
     {
         $relationshipName = $relationship->relationshipName;
 
