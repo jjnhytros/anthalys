@@ -1,0 +1,278 @@
+/* Modalità chiara di default */
+body.light {
+    background-color: var(--light);
+    color: var(--gray-900);
+}
+
+body.light .navbar {
+    background-color: var(--gray-100);
+}
+
+body.light a {
+    color: var(--primary);
+}
+
+/* Modalità scura */
+body.dark {
+    background-color: var(--gray-900);
+    color: var(--white);
+}
+
+body.dark .navbar {
+    background-color: var(--gray-dark);
+}
+
+body.dark a {
+    color: var(--primary);
+}
+
+body.dark .form-check-label {
+    color: var(--white);
+}
+
+body.dark .card {
+    background-color: var(--gray-800);
+    color: var(--white);
+}
+
+/* Stili per i pulsanti e altri elementi */
+button {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+button:hover {
+    background-color: var(--indigo);
+}
+
+.phone-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1260
+}
+
+.phone-screen {
+    width: 288px;
+    height: 400px;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--gray-200);
+    padding: 15px;
+    overflow: hidden;
+}
+.phone-header {
+    font-size: .72rem;
+    border-bottom: 1px solid var(--gray-500);
+    padding-bottom: 5px;
+    height: auto;
+    line-height: .96
+}
+
+.phone-header i {
+    font-size: .72rem;
+    margin-right: 8px
+}
+
+.phone-apps .col-3 {
+    padding: 6px;
+}
+
+.phone-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    font-size: 0.72rem;
+    width: 100%;
+}
+.phone-app i {
+    font-size: 1.2rem;
+}
+.phone-app:hover {
+    color: var(--info);
+    background-color: var(--white)
+}
+
+.phone-app:hover i {
+    color: var(--info);
+    background-color: var(--white)
+}
+
+.phone-app-label {
+    margin-top: 3px;
+}
+.phone-dockbar {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    display: flex;
+    gap: 6px;
+}
+
+.phone-dockbar .small-btn {
+    font-size: 0.72rem;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#settingsDropdown {
+    border: none;
+    background-color: transparent;
+    padding: 0
+}
+
+#settingsDropdown:hover,
+#settingsDropdown:focus,
+#settingsDropdown:active {
+    outline: none;
+    box-shadow: none;
+    color: var(--red)
+}
+
+#settingsDropdown i {
+    transition: color .3s
+}
+
+#settingsDropdown:hover i,
+#settingsDropdown:active i {
+    color: var(--red)
+}
+
+#notificationIcon {
+    color: var(--black);
+    transition: color .3s
+}
+
+#notificationIcon.has-notifications {
+    color: var(--red)
+}
+
+#notificationIcon.has-notifications::before {
+    content: '\F189';
+    font-family: 'bootstrap-icons'
+}
+
+#phoneIcon {
+    color: var(--black);
+    font-size: 1rem;
+    transition: color .6s;
+    border: none;
+    background-color: transparent;
+    padding: 0
+}
+
+#phoneIcon:hover,
+#phoneIcon:focus,
+#phoneIcon:active {
+    outline: none;
+    box-shadow: none
+}
+
+#phoneIcon i {
+    transition: color .6s
+}
+
+#phoneIcon:hover i,
+#phoneIcon:active i {
+    color: var(--red)
+}
+
+#phoneIcon.has-notifications {
+    color: var(--red)
+}
+
+#phoneIcon.has-notifications::before {
+    content: '\F4E2';
+    font-family: 'bootstrap-icons'
+}
+
+.chat-sidebar {
+    background-color: var(--gray-dark);
+}
+
+.chat-sidebar-link {
+    color: var(--gray-300);
+}
+
+.chat-sidebar-link:hover {
+    color: var(--white);
+    background-color: var(--gray-800);
+}
+
+.chat-sidebar-title {
+    color: var(--white);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.chat-divider {
+    border-color: var(--gray-600);
+}
+
+
+/* Email Inbox Custom Styles */
+.email-container {
+    padding: 20px;
+}
+
+.email .btn-group .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Lista di messaggi */
+.email-item {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.email-item:hover {
+    background-color: #f9f9f9;
+}
+
+/* Messaggi non letti */
+.email-item-unread {
+    font-weight: bold;
+    background-color: #fdf9e6;
+}
+
+/* Icone delle azioni */
+.email-item .action i {
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.email-item .action i:hover {
+    color: #007bff;
+}
+
+/* Barra azioni selezione e azioni */
+.email-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.email-actions .dropdown-menu {
+    min-width: 150px;
+}
+
+/* Stile per selezione invertita */
+.btn-invert-selection {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.email-pagination {
+    justify-content: center;
+}
+

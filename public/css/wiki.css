@@ -1,0 +1,63 @@
+.wiki{
+    font-size: 90%;
+}
+a.non-existent-link {
+    color: var(--red) !important;
+    text-decoration: none !important;
+}
+
+a.non-existent-link:hover {
+    color: var(--red) !important;
+    text-decoration: none !important;
+}
+
+/* Pulsante di modifica fisso */
+.custom-edit-btn {
+    position: fixed;
+    top: 20px;
+    /* Distanza dalla parte superiore */
+    right: 20px;
+    /* Distanza dal lato destro */
+    z-index: 1000;
+    /* Per assicurarsi che rimanga visibile sopra altri elementi */
+    background-color: #007bff;
+    /* Colore del pulsante */
+    color: var(--white);
+    /* Colore del testo */
+    padding: 10px 20px;
+    /* Spaziatura interna */
+    border-radius: 5px;
+    /* Angoli arrotondati */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Leggera ombra per evidenziare il pulsante */
+    transition: background-color 0.3s ease;
+    /* Effetto di transizione */
+}
+
+/* Effetto hover */
+.custom-edit-btn:hover {
+    background-color: #0056b3;
+    /* Colore più scuro al passaggio del mouse */
+}
+
+/* Pulsante sempre visibile nel breadcrumb */
+.breadcrumb-edit-button {
+    display: flex;
+    justify-content: flex-end;
+    /* Allinea il pulsante a destra */
+}
+
+@media (min-width: 768px) {
+    .custom-edit-btn {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-edit-btn {
+        top: 10px;
+        right: 10px;
+        padding: 8px 16px;
+    }
+}
